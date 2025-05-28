@@ -1,1 +1,16 @@
+🚀Power Supply Circuit – 5V Regulated Output
+Just wrapped up designing a power supply circuit in KiCad!
+
+🔍Circuit Overview:
+
+🔹Input: Unregulated DC voltage enters through the J1 screw terminal.
+
+🔹Rectification & Filtering: 1N4007 diodes (D1-D4) form a bridge rectifier to convert AC to DC, while capacitors (C1 & C2) smooth out the voltage.
+
+🔹Voltage Regulation: The LM7805 (U1) Voltage Regulator ensures a stable 5V output.
+
+🔹Output: A 1K resistor (R1) limits current to an LED indicator (D5), confirming power status. The regulated 5V is available at the J2 screw terminal.
+
+⚡Why It’s Important?
+This fundamental circuit is widely used in electronics projects, providing a reliable power source for sensitive components like microcontrollers and sensors.
 
