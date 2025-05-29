@@ -1,1 +1,29 @@
+🧭 MPU6050 IMU Interface with Voltage Regulation and I2C Header
+This repository contains the schematic design for interfacing the MPU6050 6-axis IMU sensor (accelerometer + gyroscope)
+with a regulated power supply and an I2C-accessible header, ideal for use in robotics, motion tracking, and embedded systems projects.
 
+🔧 Features
+
+1.MPU6050 Sensor Integration
+  a)I2C communication (SCL, SDA) with 4.7kΩ pull-up resistors
+  b)Auxiliary connections: XDA, XCL, AD0, INT for extended functions
+  c)Decoupling capacitors for signal stability
+
+2.Power Regulation Circuit
+  a)Utilizes HX9193-33GB voltage regulator to step down from +6V to 3.3V
+  b)Input/output smoothing capacitors: 4.7µF, 0.1µF, and 10µF
+  c)Ensures safe and stable power delivery to the MPU6050 and peripherals
+
+3.Connectivity Header (J1)
+  a)8-pin header for easy interfacing with external microcontrollers (ESP32, Arduino, STM32, etc.)
+  b)Breaks out power, I2C lines, and auxiliary sensor pins
+
+4.Status Indicator
+  a)Onboard LED with current-limiting resistor to indicate power status or activity
+
+⚙️ Applications
+
+a)Motion and orientation detection
+b)Balancing robots and drones
+c)Wearable electronics
+d)Sensor fusion experiments and IMU logging
